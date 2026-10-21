@@ -1,9 +1,9 @@
 # slate-desktop
 
 > A pywebview + Vite + TypeScript desktop app with a fully hand-drawn control library.
-> Built as a validation project for **ParallelAgent v1.1.0**.
+> Built as a validation project for **ParallelAgent-v1.1.0**.
 
-> **项目定位**：本项目是 **ParallelAgent v1.1.0** 的测试验证项目，用于验证多轨并行开发、契约冻结、文件领地正交与回执验收流程。应用本身是一个自绘控件展示台，不是生产业务系统。
+> **项目定位**：本项目是 **ParallelAgent-v1.1.0** 的测试验证项目，用于验证多轨并行开发、契约冻结、文件领地正交与回执验收流程。应用本身是一个自绘控件展示台，不是生产业务系统。
 
 ## 特性
 
@@ -154,7 +154,7 @@ window.__SLATE_EVENTS__.receive("<event-json>");
 
 所有写操作使用临时文件 + `os.replace` 原子替换；损坏文件会备份为 `.bak` 并使用默认值继续启动。
 
-## ParallelAgent v1.1.0 验证记录
+## ParallelAgent-v1.1.0 验证记录
 
 本仓库保留 `.parallel-agent/` 目录，包含本次并行开发的完整流程证据：
 
