@@ -1,0 +1,12 @@
+[project]
+name = "slate-desktop"
+version = "0.1.0"
+description = "Slate desktop shell: pywebview + Vite + Python"
+requires-python = ">=3.12"
+dependencies = ["pywebview"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+pywebview = { url = "https://files.pythonhosted.org/packages/3d/25/9491695c22c4842c5b3903b4dc172e0eecf67a27c0af34a71512c9b76a0a/pywebview-6.2.1-py3-none-any.whl" }

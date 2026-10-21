@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# 前端
+frontend/node_modules/
+frontend/dist/
+
+# 运行时状态（窗口几何/主题等）
+config/runtime/*.json
+config/runtime/*.bak
+config/runtime/logs/
+
+# ParallelAgent 控制信号（临时）
+.parallel-agent/信号/
+
+# 工具
+.DS_Store
+Thumbs.db

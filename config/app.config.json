@@ -1,0 +1,27 @@
+{
+  "app": {
+    "name": "Slate",
+    "title": "Slate 工作台"
+  },
+  "window": {
+    "width": 1180,
+    "height": 780,
+    "minWidth": 960,
+    "minHeight": 620,
+    "frameless": true,
+    "background": "#F7F7F5",
+    "rememberState": true
+  },
+  "ui": {
+    "theme": "system",
+    "density": "comfortable"
+  },
+  "bridge": {
+    "timeoutMs": 8000,
+    "maxEnvelopeBytes": 1048576
+  },
+  "dev": {
+    "url": "http://127.0.0.1:5173",
+    "debug": false
+  }
+}

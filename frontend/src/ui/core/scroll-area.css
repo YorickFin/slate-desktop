@@ -1,0 +1,83 @@
+.ui-scroll-area {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.ui-scroll-viewport {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+.ui-scroll-area[data-axis='y'] .ui-scroll-viewport {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.ui-scroll-area[data-axis='x'] .ui-scroll-viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.ui-scroll-area[data-axis='both'] .ui-scroll-viewport {
+  overflow: auto;
+}
+
+.ui-scroll-content {
+  min-width: 100%;
+}
+
+.ui-scroll-area[data-axis='x'] .ui-scroll-content,
+.ui-scroll-area[data-axis='both'] .ui-scroll-content {
+  width: max-content;
+}
+
+.ui-scrollbar {
+  position: absolute;
+  opacity: 0;
+  transition: opacity var(--motion-base) var(--ease-out);
+}
+
+.ui-scrollbar-y {
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  width: 10px;
+}
+
+.ui-scrollbar-x {
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  height: 10px;
+}
+
+.ui-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: var(--radius-pill);
+  touch-action: none;
+}
+
+.ui-scrollbar-y .ui-scrollbar-thumb {
+  width: 4px;
+  margin-left: 3px;
+}
+
+.ui-scrollbar-x .ui-scrollbar-thumb {
+  height: 4px;
+  margin-top: 3px;
+}
+
+.ui-scrollbar-thumb:hover,
+.ui-scroll-area[data-dragging='y'] .ui-scrollbar-y .ui-scrollbar-thumb,
+.ui-scroll-area[data-dragging='x'] .ui-scrollbar-x .ui-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb-hover);
+}
+
+.ui-scroll-area:hover .ui-scrollbar,
+.ui-scroll-area[data-active='true'] .ui-scrollbar {
+  opacity: 1;
+}
